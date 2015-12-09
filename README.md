@@ -1,4 +1,4 @@
-# Qflex
+# QueueFlex
 
 Arbitrary task distribution platform.
 
