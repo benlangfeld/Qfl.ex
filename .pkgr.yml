@@ -7,6 +7,8 @@ changelog: CHANGELOG.md
 targets:
   ubuntu-14.04:
   debian-8:
+before:
+  - echo "runtime_path=/opt/queueflex" > elixir_buildpack.config
 after:
   - rm -rf .git
 buildpack: https://github.com/ddollar/heroku-buildpack-multi.git
