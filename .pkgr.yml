@@ -1,0 +1,12 @@
+description: Arbitrary task distribution platform.
+homepage: http://queueflex.com
+vendor: Ben Langfeld <http://langfeld.me>
+maintainer: Ben Langfeld <http://langfeld.me>
+license: Apache 2.0
+changelog: CHANGELOG.md
+targets:
+  ubuntu-14.04:
+  debian-8:
+after:
+  - rm -rf .git
+buildpack: https://github.com/ddollar/heroku-buildpack-multi.git
