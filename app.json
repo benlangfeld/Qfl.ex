@@ -1,0 +1,25 @@
+{
+  "name": "QueueFlex",
+  "description": "Arbitrary task distribution platform",
+  "website": "http://queueflex.com",
+  "repository": "https://github.com/benlangfeld/QueueFlex",
+  "scripts": {
+    "postdeploy": "mix ecto.migrate"
+  },
+  "env": {
+    "SECRET_KEY_BASE": {
+      "generator": "secret"
+    },
+    "HOST": {
+      "description": "The domain at which the app will be available.",
+      "value": "demo.queueflex.com"
+    }
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {"url": "https://github.com/benlangfeld/heroku-buildpack-elixir.git#feature/flexible-directory-structure"},
+    {"url": "https://github.com/gjaldon/heroku-buildpack-phoenix-static.git"}
+  ]
+}

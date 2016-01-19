@@ -2,6 +2,15 @@
 
 Please take a moment to review this document in order to make the contribution process easy and effective for everyone involved! Also make sure you read our [Code of Conduct](CODE_OF_CONDUCT.md) that outlines our commitment towards an open and welcoming environment.
 
+## Local development
+
+Once you have a checkout of this repository, there are a few steps necessary to setup for local development of the application:
+
+1. Install Erlang and Elixir. We recommend using Homebrew to do this on OS X. The versions we depend on can be found in `elixir_buildpack.config`.
+2. Fetch and compile the application's dependencies: `mix do deps.get, deps.compile`
+3. Run the test suite: `mix test`
+4. Start up the server with a console: `iex -S mix phoenix.server`
+
 ## Using the issue tracker
 
 Use the issues tracker for:
