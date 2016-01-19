@@ -32,7 +32,7 @@ echo "[QueueFlex]
 name=Repository for QueueFlex application.
 baseurl=https://rpm.packager.io/gh/benlangfeld/queueflex/centos7/master
 enabled=1" | sudo tee /etc/yum.repos.d/QueueFlex.repo
-sudo yum install queuelex
+sudo yum install queueflex
 ```
 
 ## More info
