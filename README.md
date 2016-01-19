@@ -35,6 +35,10 @@ enabled=1" | sudo tee /etc/yum.repos.d/QueueFlex.repo
 sudo yum install queueflex
 ```
 
+After installation via a package it is neccessary to start up the application by running `sudo queueflex scale web=1`. The application can then be managed using its cli; run `sudo queueflex` for more details. The service can be managed using `service queueflex [start/stop/restart]` and logs are available at `/var/log/queueflex`. By default the HTTP interface is available on port 6000; a reverse proxy such as Apache or nginx should be used to listen on port 80 or for SSL termination.
+
+A Vagrant environment is included in this repository in which the package installation can be tested. `vagrant up package_test` brings up the VM with the service started.
+
 QueueFlex can also be deployed to Heroku; in fact, the [QueueFlex demo](http://demo.queueflex.com) runs on Heroku and is automatically deployed from the master branch. You can deploy it yourself by clicking below:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
