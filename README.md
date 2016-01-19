@@ -24,7 +24,7 @@ sudo apt-get -y update
 sudo apt-get -y install queueflex
 ```
 
-## CentOS 7
+### CentOS 7
 
 ```
 sudo rpm --import https://rpm.packager.io/key
