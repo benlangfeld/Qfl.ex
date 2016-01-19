@@ -13,6 +13,17 @@ Once you have a checkout of this repository, there are a few steps necessary to 
 
 The tests can also be run continuously using `mix test.watch`
 
+## Packaging the application
+
+A local environment for packaging the application for Ubuntu is available, with the primary purpose being testing pkgr modifications before they are available on packager.io. The packaging procedure is:
+
+1. `vagrant up packager && vagrant ssh packager`
+2. `cd && git clone https://github.com/benlangfeld/pkgr.git && cd pkgr`
+3. `git checkout [SOME BRANCH] && bundle install`
+4. `sudo --preserve-env bundle exec pkgr package /vagrant --verbose --debug`
+
+A second environment (`package_test`) is also available and provisioned with the latest master version of the app installed from packager.io for testing.
+
 ## Using the issue tracker
 
 Use the issues tracker for:

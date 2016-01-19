@@ -8,6 +8,11 @@ Vagrant.configure("2") do |config|
   end
   config.vm.synced_folder ".", "/vagrant"
 
+  config.vm.define :packager do |packager|
+    packager.vm.provision :shell, path: "packaging/bootstrap.sh"
+    packager.vm.network :forwarded_port, guest: 6000, host: 6000
+  end
+
   config.vm.define :package_test do |package_test|
     package_test.vm.network :forwarded_port, guest: 6000, host: 5000
 
