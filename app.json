@@ -1,0 +1,15 @@
+{
+  "name": "QueueFlex",
+  "description": "Arbitrary task distribution platform",
+  "scripts": {
+    "postdeploy": "heroku run mix ecto.migrate"
+  },
+  "env": {
+    "SECRET_KEY_BASE": {
+      "generator": "secret"
+    }
+  },
+  "addons": [
+    "heroku-postgresql"
+  ]
+}
