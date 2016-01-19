@@ -14,3 +14,4 @@ after:
   - mkdir -p ../../home/queueflex
   - "cp -R /home/pkgr/{.npm,.mix,.hex} ../../home/queueflex"
 buildpack: https://github.com/ddollar/heroku-buildpack-multi.git
+after_install: "packaging/postinstall.sh"
