@@ -11,6 +11,8 @@ Once you have a checkout of this repository, there are a few steps necessary to 
 3. Run the test suite: `mix test`
 4. Start up the server with a console: `iex -S mix phoenix.server`
 
+The tests can also be run continuously using `mix test.watch`
+
 ## Using the issue tracker
 
 Use the issues tracker for:
