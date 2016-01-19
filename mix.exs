@@ -47,6 +47,7 @@ defmodule Queueflex.Mixfile do
       {:phoenix_html, "~> 2.1"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:cowboy, "~> 1.0"},
+      {:mix_test_watch, "~> 0.2", only: :dev},
     ]
   end
 
