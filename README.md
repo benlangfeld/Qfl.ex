@@ -35,7 +35,9 @@ enabled=1" | sudo tee /etc/yum.repos.d/QueueFlex.repo
 sudo yum install queueflex
 ```
 
-QueueFlex can also be deployed to Heroku; in fact, the [QueueFlex demo](http://demo.queueflex.com) runs on Heroku and is automatically deployed from the master branch.
+QueueFlex can also be deployed to Heroku; in fact, the [QueueFlex demo](http://demo.queueflex.com) runs on Heroku and is automatically deployed from the master branch. You can deploy it yourself by clicking below:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## More info
 
