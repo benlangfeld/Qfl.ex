@@ -3,4 +3,7 @@ elixir:
   - 1.2.0
 otp_release:
   - 18.2.1
-script: mix test
+script:
+  - export MIX_ENV=test
+  - mix test
+  - mix coveralls.travis

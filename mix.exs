@@ -12,6 +12,8 @@ defmodule Queueflex.Mixfile do
       start_permanent: Mix.env == :prod,
       aliases: aliases,
       deps: deps,
+      test_coverage: [tool: ExCoveralls],
+      preferred_cli_env: ["coveralls": :test, "coveralls.detail": :test, "coveralls.post": :test],
     ]
   end
 
@@ -48,6 +50,7 @@ defmodule Queueflex.Mixfile do
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:cowboy, "~> 1.0"},
       {:mix_test_watch, "~> 0.2", only: :dev},
+      {:excoveralls, "~> 0.4", only: :test}
     ]
   end
 
