@@ -1,4 +1,6 @@
 defmodule Queueflex.ErrorView do
+  @moduledoc false
+
   use Queueflex.Web, :view
 
   def render("404.html", _assigns) do

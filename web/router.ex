@@ -1,4 +1,6 @@
 defmodule Queueflex.Router do
+  @moduledoc false
+
   use Queueflex.Web, :router
 
   pipeline :browser do

@@ -2,6 +2,7 @@
   "cowboy": {:hex, :cowboy, "1.0.4"},
   "cowlib": {:hex, :cowlib, "1.0.2"},
   "decimal": {:hex, :decimal, "1.1.0"},
+  "dogma": {:hex, :dogma, "0.0.11"},
   "ecto": {:hex, :ecto, "1.0.7"},
   "excoveralls": {:hex, :excoveralls, "0.4.5"},
   "exjsx": {:hex, :exjsx, "3.2.0"},

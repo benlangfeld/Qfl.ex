@@ -50,7 +50,8 @@ defmodule Queueflex.Mixfile do
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:cowboy, "~> 1.0"},
       {:mix_test_watch, "~> 0.2", only: :dev},
-      {:excoveralls, "~> 0.4", only: :test}
+      {:excoveralls, "~> 0.4", only: :test},
+      {:dogma, "~> 0.0", only: :dev},
     ]
   end
 
