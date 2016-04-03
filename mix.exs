@@ -5,6 +5,9 @@ defmodule Queueflex.Mixfile do
     [
       app: :queueflex,
       version: "0.0.1",
+      name: "QueueFlex",
+      source_url: "https://github.com/benlangfeld/QueueFlex",
+      homepage_url: "http://queueflex.com",
       elixir: "~> 1.2",
       elixirc_paths: elixirc_paths(Mix.env),
       compilers: [:phoenix] ++ Mix.compilers,
@@ -14,6 +17,16 @@ defmodule Queueflex.Mixfile do
       deps: deps,
       test_coverage: [tool: ExCoveralls],
       preferred_cli_env: ["coveralls": :test, "coveralls.detail": :test, "coveralls.post": :test],
+      docs: [
+        main: "readme",
+        extras: [
+          "README.md",
+          "CONTRIBUTING.md",
+          "CODE_OF_CONDUCT.md",
+          "CHANGELOG.md",
+          "LICENSE.md"
+        ],
+      ],
     ]
   end
 
@@ -53,6 +66,8 @@ defmodule Queueflex.Mixfile do
       {:excoveralls, "~> 0.4", only: :test},
       {:dogma, "~> 0.0", only: :dev},
       {:changex, only: :dev},
+      {:earmark, "~> 0.1", only: :dev},
+      {:ex_doc, "~> 0.11", only: :dev},
     ]
   end
 
