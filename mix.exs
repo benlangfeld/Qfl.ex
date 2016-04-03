@@ -68,6 +68,8 @@ defmodule Queueflex.Mixfile do
       {:changex, only: :dev},
       {:earmark, "~> 0.1"},
       {:ex_doc, "~> 0.11"},
+      {:absinthe_plug, "~> 1.0"},
+      {:poison, "~> 1.5"},
     ]
   end
 
