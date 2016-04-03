@@ -3,10 +3,10 @@ defmodule Queueflex.UserSocket do
 
   use Phoenix.Socket
 
-  ## Channels
+  # Channels
   # channel "rooms:*", Queueflex.RoomChannel
 
-  ## Transports
+  # Transports
   transport :websocket, Phoenix.Transports.WebSocket
   # transport :longpoll, Phoenix.Transports.LongPoll
 

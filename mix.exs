@@ -56,9 +56,9 @@ defmodule Queueflex.Mixfile do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.0.3"},
+      {:phoenix, "~> 1.0"},
       {:phoenix_ecto, "~> 1.1"},
-      {:postgrex, ">= 0.0.0"},
+      {:postgrex, "~> 0.11.0"},
       {:phoenix_html, "~> 2.1"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:cowboy, "~> 1.0"},
