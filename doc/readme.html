@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.11.4">
+    <title>QueueFlex – QueueFlex v0.0.1</title>
+    <link rel="stylesheet" href="dist/app-1e374caa3d.css" />
+    <script src="dist/sidebar_items.js"></script>
+  </head>
+  <body data-type="extras">
+
+<div class="main">
+<button class="sidebar-toggle">
+  <i class="icon-menu"></i>
+</button>
+<section class="sidebar">
+  <button class="sidebar-toggle">
+    <i class="icon-menu"></i>
+  </button>
+
+  
+  <a href="README.html" class="sidebar-projectLink">
+    <div class="sidebar-projectDetails">
+      <h1 class="sidebar-projectName">
+        QueueFlex
+      </h1>
+      <h2 class="sidebar-projectVersion">
+        v0.0.1
+      </h2>
+    </div>
+    
+  </a>
+
+  <div class="sidebar-search">
+    <i class="icon-search"></i>
+    <input type="text" class="sidebar-searchInput" placeholder="search" autocomplete="off" />
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+    
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+    
+
+    
+
+    
+  </ul>
+
+  <ul id="full-list" class="sidebar-fullList"></ul>
+  <div class="sidebar-noResults"></div>
+</section>
+
+<section class="content">
+  <div id="content" class="content-inner">
+
+
+<h1>QueueFlex</h1>
+<p>Arbitrary task distribution platform.</p>
+<h2 id="installation"> Installation</h2><p>QueueFlex is available as a system package for various operating systems, and can be installed as follows:</p>
+<h3>Debian 8</h3>
+<pre><code class="elixir">wget -qO - https://deb.packager.io/key | sudo apt-key add -
+echo &quot;deb https://deb.packager.io/gh/benlangfeld/QueueFlex jessie master&quot; | sudo tee /etc/apt/sources.list.d/QueueFlex.list
+sudo apt-get -y update
+sudo apt-get -y install queueflex</code></pre>
+<h3>Ubuntu 14.04</h3>
+<pre><code class="elixir">wget -qO - https://deb.packager.io/key | sudo apt-key add -
+echo &quot;deb https://deb.packager.io/gh/benlangfeld/QueueFlex trusty master&quot; | sudo tee /etc/apt/sources.list.d/QueueFlex.list
+sudo apt-get -y update
+sudo apt-get -y install queueflex</code></pre>
+<h3>CentOS 7</h3>
+<pre><code class="elixir">sudo rpm --import https://rpm.packager.io/key
+echo &quot;[QueueFlex]
+name=Repository for QueueFlex application.
+baseurl=https://rpm.packager.io/gh/benlangfeld/queueflex/centos7/master
+enabled=1&quot; | sudo tee /etc/yum.repos.d/QueueFlex.repo
+sudo yum install queueflex</code></pre>
+<p>After installation via a package it is neccessary to start up the application by running <code class="inline">sudo queueflex scale web=1</code>. The application can then be managed using its cli; run <code class="inline">sudo queueflex</code> for more details. The service can be managed using <code class="inline">service queueflex [start/stop/restart]</code> and logs are available at <code class="inline">/var/log/queueflex</code>. By default the HTTP interface is available on port 6000; a reverse proxy such as Apache or nginx should be used to listen on port 80 or for SSL termination.</p>
+<p>A Vagrant environment is included in this repository in which the package installation can be tested. <code class="inline">vagrant up package_test</code> brings up the VM with the service started.</p>
+<p>QueueFlex can also be deployed to Heroku; in fact, the <a href="http://demo.queueflex.com">QueueFlex demo</a> runs on Heroku and is automatically deployed from the master branch. You can deploy it yourself by clicking below:</p>
+<p><a href="https://heroku.com/deploy"><img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy"/></a></p>
+<h2 id="more-info"> More info</h2><p>The project website is at <a href="http://queueflex.com">http://queueflex.com</a> and the source code repository lives <a href="https://github.com/benlangfeld/QueueFlex">on GitHub</a>. Futher available resources are the <a href="http://groups.google.com/group/queueflex">community mailing list</a>, the project <a href="https://twitter.com/queueflex">Twitter account</a> and <a href="https://www.pivotaltracker.com/n/projects/1496824">a scrum board</a> for planning project work, while bugs should be reported <a href="https://github.com/benlangfeld/QueueFlex/issues">via GitHub issues</a>.</p>
+<h2 id="contributing"> Contributing</h2><p>See the <a href="CONTRIBUTING.md">CONTRIBUTING.md</a> file for details.</p>
+<h2 id="credits"> Credits</h2><p>Copyright 2015 Ben Langfeld. See the LICENSE file for more information.</p>
+
+    <footer class="footer">
+      <p>
+        <span class="line">
+          Built using
+          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" rel="help" target="_blank">ExDoc</a> (v0.11.4),
+        </span>
+        <span class="line">
+          designed by
+          <a href="https://twitter.com/dignifiedquire" target="_blank" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+          </span>
+      </p>
+      <button class="night-mode-toggle" />
+    </footer>
+  </div>
+</section>
+</div>
+  <script src="dist/app-6d2e071366.js"></script>
+  </body>
+</html>
+
