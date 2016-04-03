@@ -119,4 +119,46 @@ Please adhere to the coding conventions in the project (indentation, accurate co
    git rebase master
    ```
 
+### Commit Messages
+
+All pull request commit messages are automatically checked using [GitCop](http://gitcop.com) - this will inform you if there are any issues with your commit message and give you an oppertunity to change it.
+
+#### Length
+
+No line in your commit message shoult be longer than **72** characters. If you have something that is longer than this (such as a url), please put it on to multiple lines with a backspace at the end of each line.
+
+#### Subject
+
+The subject (first commit line) should be written in the past tense and should start with a lower case letter. e.g.
+
+    feat(QueueFlex.Router): add a missing route
+
+Instead of:
+
+    Feat(QueueFlex.Router): Add a missing route
+
+#### Format
+
+Because Changex automatically generates the [CHANGELOG.md](https://github.com/benlangfeld/QueueFlex/blob/master/CHANGELOG.md) from the commit messages, it is important that the follow these rules.
+
+Please ensure that your commit messages follow the following format:
+
+    %{type}(%{scope}): %{description}
+
+Where type is one of the following:
+
+ * **feat** - A feature
+ * **fix** - A bug fix or fixes to broken tests
+ * **docs** - Documentation changes
+ * **style** - Code changes such as whitespace or bracket position
+ * **refactor** - Code changes that do not fit in the above
+ * **perf** - Code changes that improve performance
+ * **test** - Adding missing tests
+ * **revert** - Reverting the code changes in a previous commit
+ * **chore** - Changes that do not fit elsewhere
+
+Breaking changes should be added at the bottom of the commit message in the following format:
+
+    BREAKING CHANGE: description
+
 Thank you for your contributions!

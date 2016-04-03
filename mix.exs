@@ -52,6 +52,7 @@ defmodule Queueflex.Mixfile do
       {:mix_test_watch, "~> 0.2", only: :dev},
       {:excoveralls, "~> 0.4", only: :test},
       {:dogma, "~> 0.0", only: :dev},
+      {:changex, only: :dev},
     ]
   end
 
