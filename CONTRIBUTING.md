@@ -161,4 +161,16 @@ Breaking changes should be added at the bottom of the commit message in the foll
 
     BREAKING CHANGE: description
 
+## Releasing
+
+In order to release a new version of this project, the following process is required:
+
+1. Create a release branch eg `release/x.y.z`
+1. Update the application version in `mix.exs`
+1. Generate an update to the changelog: `mix changex.update --github benlangfeld/QueueFlex`
+1. Commit the new version number and changelog update
+1. Push the branch and open a PR for testing
+1. Merge the PR if all checks pass
+1. Tag the PR merge commit with the version number eg `v1.2.3` and push the tag
+
 Thank you for your contributions!
