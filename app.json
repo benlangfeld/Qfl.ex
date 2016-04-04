@@ -19,7 +19,7 @@
     "heroku-postgresql"
   ],
   "buildpacks": [
-    {"url": "https://github.com/benlangfeld/heroku-buildpack-elixir.git#feature/flexible-directory-structure"},
+    {"url": "https://github.com/HashNuke/heroku-buildpack-elixir.git"},
     {"url": "https://github.com/gjaldon/heroku-buildpack-phoenix-static.git"}
   ]
 }
