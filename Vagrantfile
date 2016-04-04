@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
   config.vm.synced_folder ".", "/vagrant"
 
   config.vm.define :package_test do |package_test|
-    package_test.vm.network :forwarded_port, guest: 6000, host: 6000
+    package_test.vm.network :forwarded_port, guest: 6000, host: 5000
 
     package_test.vm.provision "shell", inline: <<-SCRIPT
       wget -qO - https://deb.packager.io/key | sudo apt-key add -
