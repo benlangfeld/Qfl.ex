@@ -26,4 +26,4 @@ web/static/vendor
 /config/prod.secret.exs
 
 .vagrant
-doc
+/doc
