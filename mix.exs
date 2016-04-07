@@ -43,6 +43,7 @@ defmodule Queueflex.Mixfile do
         :logger,
         :phoenix_ecto,
         :postgrex,
+        :absinthe_plug,
       ]
     ]
   end
