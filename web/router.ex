@@ -21,8 +21,8 @@ defmodule Queueflex.Router do
     get "/", PageController, :index
   end
 
-  # Other scopes may use custom stacks.
-  # scope "/api", Queueflex do
-  #   pipe_through :api
-  # end
+  scope "/api" do
+    get "/browser", Absinthe.Plug.GraphiQL, schema: Queueflex.Web.Schema
+    forward "/", Absinthe.Plug, schema: Queueflex.Web.Schema
+  end
 end

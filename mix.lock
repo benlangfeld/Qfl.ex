@@ -1,4 +1,6 @@
-%{"certifi": {:hex, :certifi, "0.4.0"},
+%{"absinthe": {:hex, :absinthe, "1.1.3"},
+  "absinthe_plug": {:git, "https://github.com/absinthe-graphql/absinthe_plug.git", "35c02130dc1dc6272df3eed4682ad7a9de4777af", []},
+  "certifi": {:hex, :certifi, "0.4.0"},
   "changex": {:hex, :changex, "0.1.1"},
   "connection": {:hex, :connection, "1.0.2"},
   "cowboy": {:hex, :cowboy, "1.0.4"},
